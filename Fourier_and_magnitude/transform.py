@@ -1,6 +1,6 @@
 import numpy as np
 import cv2 as cv
-img = cv.imread('',cv.IMREAD_GRAYSCALE)
+img = cv.imread('Fourier_and_magnitude/01.jpg',cv.IMREAD_GRAYSCALE)
 
 img = img.astype(np.float32)
 
@@ -14,7 +14,7 @@ imgMag = np.sqrt(imgReal**2 + imgIma**2)
 imgPhs = np.arctan2(imgIma,imgReal)
 
 imgRealInv = imgMag * np.cos(imgPhs)
-imgImaInv = imgMag + np.sin(imgPhs)
+imgImaInv = imgMag * np.sin(imgPhs)
 
 imgFInv = imgRealInv + imgImaInv * 1j
 
