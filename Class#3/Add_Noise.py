@@ -2,7 +2,7 @@ import cv2 as cv
 import random
 
 #Add salt&PepperNoise
-img = cv.imread('salt&Pepper_Noise/01.jpg',cv.IMREAD_GRAYSCALE)
+img = cv.imread('Class#3/01.jpg',cv.IMREAD_GRAYSCALE)
 
 density_salt = 0.2
 density_pepper = 0.2
